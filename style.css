@@ -19,24 +19,67 @@ li {
     display: inline;
 }
 
+/* links style */
+a {
+    text-decoration: none;
+    color: #E5E7EB;
+}
+
 /* make these section fill equally the available space */
 /* those not includes are pushed by those mentioned */
 /* This pushes nav-bar to the top and footer to the bottom */
-.hero-section, .projects-section, .quote-section .action-section {
+.hero-section, .projects-section, .quote-section, .action-section {
     flex: 1;
     display: flex;
 }
 
+.nav-bar, .hero-section {
+    background-color: #1F2937;
+}
+
 /* Distribute equally the .nav-bar flex items */
 .nav-bar {
+    padding: 20px 350px;
     display: flex;
     justify-content: space-between;
+}
+.nav-logo {
+    color: #F9FAF8;
+    font-size: 24px;
+}
+
+/* Hero section style */
+.hero-section {
+    align-items: center;
+    padding: 100px 350px;
+    gap: 20px;
+}
+.hero-description {
+    padding: 10px 20px 10px 0;
+}
+.hero-section h1 {
+    font-size: 48px;
+    font-weight:900;
+    color: #F9FAF8;
+    margin: 15px 0;
+}
+.hero-section p {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+.hero-description button {
+    background-color: #3882f6;
+    color: #F9FAF8;
+    padding: 5px 25px;
+    border: 0;
+    border-radius: 6%;
 }
 
 /* Project style */
 .projects-section {
     flex-direction: column;
     align-items: center;
+    padding: 50px 300px;
 }
 .projects {
     display: flex;
@@ -47,9 +90,14 @@ li {
 .quote-section {
     display: flex;
     flex-direction: column;
+    background-color: #E5E7EB;
+    padding: 100px 350px;
 }
 .quote-section .quote {
     text-align: center;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
 }
 .quote-section .author {
     margin-left: auto;
@@ -57,20 +105,42 @@ li {
 
 /* action section style */
 .action-section {
-    padding: 100px 200px;
-}
-.action-card {
     display: flex;
-    justify-content: space-between;
-    padding: 20px 100px;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 250px; /* Padding respect the body container */
+}
+.action-group {
+    display: flex;
+    gap: 50px;
+    background-color: #3882f6;
+    border-radius: 10px;
+    padding: 30px 60px;
+}
+.action-text, .action-right {
+    flex: 1;
+}
+.action-text{
+    color: #E5E7EB;
+    width: 900px;
 }
 .action-right {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+}.action-btn {
+    background-color: transparent;
+    color: #F9FAF8;
+    border-style: solid;
+    border-color: #F9FAF8;
+    border-radius: 5%;
+    padding: 5px 15px;
 }
 
 /* footer section style */
 footer {
     text-align: center;
     padding: 40px 0;
+    background-color: #1F2937;
+    color: #F9FAF8;
 }
