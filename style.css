@@ -4,9 +4,73 @@ body {
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
+    margin: 0;
+}
+
+/* list styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+li {
+    display: inline;
+}
+
+/* make these section fill equally the available space */
+/* those not includes are pushed by those mentioned */
+/* This pushes nav-bar to the top and footer to the bottom */
+.hero-section, .projects-section, .quote-section .action-section {
+    flex: 1;
+    display: flex;
+}
+
+/* Distribute equally the .nav-bar flex items */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Project style */
+.projects-section {
+    flex-direction: column;
+    align-items: center;
+}
+.projects {
+    display: flex;
+    gap: 20px;
+}
+
+/* Quote Style */
+.quote-section {
+    display: flex;
+    flex-direction: column;
+}
+.quote-section .quote {
+    text-align: center;
+}
+.quote-section .author {
+    margin-left: auto;
+}
+
+/* action section style */
+.action-section {
+    padding: 100px 200px;
+}
+.action-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+}
+.action-right {
+    display: flex;
     align-items: center;
 }
 
-.hero-section, .projects-section, .quote-section .action-section {
-    flex: 1;
+/* footer section style */
+footer {
+    text-align: center;
+    padding: 40px 0;
 }
