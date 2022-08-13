@@ -79,11 +79,31 @@ a {
 .projects-section {
     flex-direction: column;
     align-items: center;
-    padding: 50px 300px;
+    padding: 150px 250px;
+}
+.projects-section h2 {
+    margin-bottom: 50px;
+    font-weight: 900;
 }
 .projects {
     display: flex;
-    gap: 20px;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+/* Style image projects */
+.project img {
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #3882f6;
+}
+/* Set equal space distribution no matter the quatity of text */
+.project p {
+    color: #1F2937;
+    width: 300px;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 /* Quote Style */
@@ -97,7 +117,7 @@ a {
     text-align: center;
     font-size: 36px;
     font-style: italic;
-    font-weight: lighter;
+    font-weight: 100;
 }
 .quote-section .author {
     margin-left: auto;
